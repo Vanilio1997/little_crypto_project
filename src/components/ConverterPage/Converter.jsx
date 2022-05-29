@@ -53,7 +53,10 @@ setToInput('');
         >
             {
                 arr.map(item=>(
-                    <option className='option_value' value={item.coin}>{item.coin}
+                    <option 
+                    key={item.id}
+                    className='option_value' 
+                    value={item.coin}>{item.coin}
                     <img className='coin_value' src={item.logo} alt="" />
                     </option>
                 ))
@@ -79,7 +82,9 @@ setToInput('');
         >
             {
                 arr.map(item=>(
-                    <option value={item.coin}>{item.coin}</option>
+                    <option 
+                    key={item.id}
+                    value={item.coin}>{item.coin}</option>
                 ))
             }
             </select>

@@ -47,7 +47,9 @@ const CoinHistory = () => {
             onChange={(e) => setHandleSelect(e.target.value)}
             >
                 {coins.map((item)=>(
-                      <option value={item.coin}>{item.coin}</option> 
+                      <option 
+                      key={item.id}
+                      value={item.coin}>{item.coin}</option> 
                 ))}
             </select>
             <LineChart  coinLineChartData={coinLineChartData } />

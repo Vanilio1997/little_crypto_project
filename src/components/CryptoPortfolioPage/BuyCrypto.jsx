@@ -75,6 +75,7 @@ const newCoins = coins.map(item => {
 {
   coins.map(coin =>(
     <div
+    key={coin.id}
     className='coinChoise_type'  
     onClick = {() => setCoinForBuy(coin.coin)}> <p>{coin.coin} </p>
    <div className='logo_wrapper'> <img src={coin.logo} alt='logo'/></div></div>

@@ -7,7 +7,9 @@ const Asset = ({coins}) => {
             {
 coins.map(coin=>(
   
-  <div className='table_coin'>
+  <div  
+  key={coin.id}
+  className='table_coin'>
 <div className='assert_nameLogo'> 
 <div className='assert_name'>
     <p>{coin.coin}</p>
